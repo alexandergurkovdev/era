@@ -1,0 +1,149 @@
+.header {
+  padding: $gutter * 2;
+  position: relative;
+  @media (max-width: $breakpoint-xs) {
+    padding: $gutter 0;
+  }
+  &__logo {
+    display: block;
+    margin-right: auto;
+    img {
+      width: 168px;
+      @media (max-width: $breakpoint-xs) {
+        width: 90px;
+      }
+    }
+  }
+
+  &__nav {
+    @media (max-width: $breakpoint-lg) {
+      position: absolute;
+      top: 100%;
+      z-index: 200;
+      background: $c-white;
+      width: 100%;
+      left: 0;
+      padding: $gutter;
+      border-top: 2px solid $c-gray;
+      display: none;
+    }
+    ul {
+      @media (max-width: $breakpoint-lg) {
+        justify-content: center;
+      }
+      @media (max-width: $breakpoint-xs) {
+        flex-direction: column;
+      }
+      li {
+        padding: 0 $gutter;
+        @media (max-width: $breakpoint-xs) {
+          padding: 0 $gutter $gutter / 2 $gutter;
+        }
+        a {
+          display: block;
+          text-decoration: none;
+          line-height: 1;
+          position: relative;
+
+          &.active {
+            font-weight: 700;
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    width: 168px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid $c-red;
+    border-radius: 4px;
+    color: $c-red;
+    text-decoration: none;
+    @include transition(200ms, color, background);
+    margin: 0 $gutter * 1.333 0 $gutter / 1.5;
+    &:hover {
+      color: $c-white;
+      background: $c-red;
+    }
+    @media (max-width: $breakpoint-xs) {
+      width: 110px;
+      font-size: 11px;
+      line-height: 40px;
+      height: 40px;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &__language {
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    @media (max-width: $breakpoint-xs) {
+      font-size: 14px;
+    }
+  }
+
+  .nav-toggler {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    background: none;
+    padding: 0;
+    border: 0;
+    display: none;
+    margin-left: $gutter;
+    span {
+      position: absolute;
+      left: 0;
+      @include transition(200ms, transform, opacity);
+      background: $c-red;
+      height: 3px;
+      width: 100%;
+      display: block;
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
+    &.active {
+      span {
+        transform-origin: top;
+        &:nth-child(1) {
+          top: 50%;
+          transform: rotate(45deg) translateY(-50%);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          transform: rotate(-45deg) translateY(-50%);
+          bottom: auto;
+        }
+      }
+    }
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+  }
+}

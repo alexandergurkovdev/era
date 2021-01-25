@@ -1,0 +1,43 @@
+.tabs {
+  &-nav {
+    display: flex;
+    border-bottom: 2px solid $c-gray;
+    @media (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
+      border: 0;
+    }
+    &__item {
+      padding-right: 45px;
+      @media (max-width: $breakpoint-md) {
+        padding-right: 15px;
+      }
+      @media (max-width: $breakpoint-sm) {
+        margin-bottom: 5px;
+      }
+      &.active {
+        .tabs-nav__link {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &__link {
+      position: relative;
+      &::after {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 3px);
+        height: 2px;
+        background: $c-red;
+        width: 100%;
+        opacity: 0;
+        @include transition(200ms, opacity);
+        content: '';
+      }
+    }
+  }
+  &-content {
+    padding-top: 30px;
+  }
+}

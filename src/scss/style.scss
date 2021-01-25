@@ -1,0 +1,32 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './reset';
+@import './typography';
+@import './utils';
+@import './grid/index';
+
+// libs
+@import './libs/slick';
+
+// components
+@import './components/breadcrumbs';
+@import './components/slider';
+@import './components/button';
+@import './components/load-more';
+@import './components/tabs';
+@import './components/tags';
+@import './components/pagination';
+
+// blocks
+@import './blocks/dropdown';
+@import './blocks/header';
+@import './blocks/footer';
+@import './blocks/sections/news';
+@import './blocks/sections/contact';
+
+// pages
+@import './pages/index';
+@import './pages/blog';
+@import './pages/about';
+@import './pages/about-history';

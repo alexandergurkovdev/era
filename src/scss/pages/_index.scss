@@ -1,0 +1,497 @@
+.top {
+  position: relative;
+  .dots-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+    .top-slider {
+      margin-bottom: 0 !important;
+    }
+    .slick-dots {
+      position: static;
+      justify-content: flex-start;
+    }
+  }
+  &-slider {
+    margin-bottom: 0 !important;
+    &__item {
+      color: $c-white;
+      height: 575px;
+      padding-top: 114px;
+      position: relative;
+      z-index: 1;
+      background-size: cover !important;
+      background-position: center !important;
+      @media (max-width: $breakpoint-md) {
+        height: 500px;
+        padding-top: 90px;
+      }
+      @media (max-width: $breakpoint-sm) {
+        height: auto;
+        padding: 80px 0;
+      }
+      &::after,
+      &::before {
+        position: absolute;
+        top: 0;
+        content: '';
+        z-index: -1;
+        @media (max-width: $breakpoint-sm) {
+          display: none;
+        }
+      }
+      &::after {
+        height: 100%;
+        width: 39%;
+        background: $c-dark;
+        left: 0;
+      }
+      &::before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 575px 0 0 540px;
+        border-color: transparent transparent transparent $c-dark;
+        left: 39%;
+        @media (max-width: $breakpoint-lg) {
+          border-width: 575px 0 0 400px;
+        }
+        @media (max-width: $breakpoint-md) {
+          border-width: 500px 0 0 380px;
+        }
+      }
+      .content {
+        max-width: 500px;
+        span {
+          display: block;
+          margin-bottom: $gutter;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        h2 {
+          font-size: 48px;
+          margin-bottom: $gutter;
+          line-height: 1.1;
+          @media (max-width: $breakpoint-lg) {
+            font-size: 40px;
+          }
+          @media (max-width: $breakpoint-md) {
+            font-size: 35px;
+          }
+          span {
+            display: inline;
+            font-size: 48px;
+            @media (max-width: $breakpoint-lg) {
+              font-size: 40px;
+            }
+            @media (max-width: $breakpoint-md) {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-about {
+  padding-top: 75px;
+  @media (max-width: $breakpoint-md) {
+    padding-top: 60px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &-item {
+    height: 235px;
+    margin-top: 20px;
+    color: $c-white;
+    @media (max-width: $breakpoint-sm) {
+      height: auto;
+    }
+    h2 {
+      font-size: 72px;
+      line-height: 1;
+      @media (max-width: $breakpoint-lg) {
+        font-size: 65px;
+      }
+      @media (max-width: $breakpoint-md) {
+        font-size: 50px;
+      }
+      @media (max-width: $breakpoint-xs) {
+        font-size: 35px;
+      }
+    }
+    p {
+      br {
+        @media (max-width: $breakpoint-xs) {
+          display: none;
+        }
+      }
+    }
+    &--fourth,
+    &--first {
+      background: $c-red;
+    }
+    &--first {
+      .content {
+        padding: $gutter * 2 $gutter * 2 0 0;
+        max-width: 360px;
+        margin-left: auto;
+        h2 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &--second {
+      background: url('../img/main-about-pic-1.jpg') no-repeat center;
+      background-size: cover;
+      .content {
+        padding: $gutter * 2 0 0 $gutter * 2;
+        max-width: 735px;
+        margin-right: auto;
+        padding-right: 100px;
+        @media (max-width: $breakpoint-xs) {
+          flex-wrap: wrap;
+        }
+        &__item {
+          @media (max-width: $breakpoint-sm) {
+            width: 50%;
+          }
+          @media (max-width: $breakpoint-xs) {
+            width: 100%;
+            margin-bottom: 15px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    &--third {
+      background: url('../img/main-about-pic-2.jpg') no-repeat center;
+      background-size: cover;
+      .content {
+        padding: 0 $gutter * 2 $gutter * 2 0;
+        max-width: 450px;
+        margin-left: auto;
+        text-align: right;
+        height: 235px;
+        @media (max-width: $breakpoint-sm) {
+          height: auto;
+        }
+      }
+    }
+    &--fourth {
+      .content {
+        padding: $gutter * 2 0 0 $gutter * 2;
+        max-width: 450px;
+        margin-right: auto;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .content {
+      @media (max-width: $breakpoint-md) {
+        padding: $gutter;
+      }
+      @media (max-width: $breakpoint-sm) {
+        max-width: 100% !important;
+        text-align: left !important;
+      }
+    }
+  }
+  &__grid {
+    margin: 0 -10px;
+    @media (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
+    }
+    &-col {
+      padding: 0 10px;
+      &:nth-child(1) {
+        width: 40%;
+      }
+      &:nth-child(2) {
+        width: 60%;
+      }
+      &:nth-child(3) {
+        width: 54%;
+      }
+      &:nth-child(4) {
+        width: 46%;
+      }
+      @media (max-width: $breakpoint-sm) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.trade-marks-wrapper {
+  padding: 140px 0 170px;
+  @media (max-width: $breakpoint-md) {
+    padding: 90px 0;
+  }
+}
+.trade-marks {
+  margin-top: 90px;
+  @media (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  &-item {
+    width: 20%;
+    text-align: center;
+    @media (max-width: $breakpoint-md) {
+      width: 33.333%;
+      margin-top: 30px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 50%;
+    }
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+    &:nth-child(odd) {
+      margin-top: 100px;
+      @media (max-width: $breakpoint-md) {
+        margin-top: 30px;
+      }
+    }
+    &__logo {
+      transform: rotate(45deg);
+      transform-origin: center;
+      width: 195px;
+      height: 195px;
+      margin-bottom: $gutter * 4;
+      @media (max-width: $breakpoint-md) {
+        transform: none;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto $gutter * 2;
+        max-width: 90%;
+      }
+      @media (max-width: $breakpoint-xs) {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 375px) {
+        width: 100%;
+      }
+      img {
+        display: block;
+        margin: auto;
+        transform: rotate(-45deg);
+        @media (max-width: $breakpoint-md) {
+          transform: none;
+        }
+        @media (max-width: $breakpoint-xs) {
+          max-width: 90%;
+        }
+      }
+      &.red {
+        background: #a03123;
+      }
+      &.gray {
+        background: #565656;
+      }
+      &.blue {
+        background: #195192;
+      }
+      &.brown {
+        background: #6d4a16;
+      }
+      &.sky {
+        background: #2f91b0;
+      }
+    }
+  }
+}
+
+.main-video {
+  background: $c-red url('../img/main-page/video-bg.png') no-repeat bottom left;
+  padding: 145px 0;
+  @media (max-width: $breakpoint-md) {
+    padding-top: 90px;
+  }
+  .container {
+    position: relative;
+  }
+  &__content {
+    max-width: 550px;
+    color: $c-white;
+    @media (max-width: $breakpoint-lg) {
+      max-width: 100%;
+    }
+    p {
+      margin-bottom: 80px;
+      @media (max-width: $breakpoint-lg) {
+        margin-bottom: 20px;
+      }
+    }
+    .btn {
+      @media (max-width: $breakpoint-lg) {
+        display: block;
+      }
+    }
+  }
+  &-slider-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 510px;
+    @media (max-width: $breakpoint-lg) {
+      position: static;
+      width: 100%;
+      margin-top: 40px;
+    }
+    .video {
+      width: 510px;
+      height: 330px;
+      @media (max-width: $breakpoint-lg) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.stock-wrapper {
+  padding: 160px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 90px 0;
+  }
+}
+.stock-grid {
+  margin: 0 -10px;
+  &__col {
+    width: 33.333%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+      .stock {
+        margin-bottom: 20px;
+      }
+    }
+    &--w50 {
+      width: 50%;
+      @media (max-width: $breakpoint-sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+.stock {
+  display: block;
+  height: 235px;
+  color: $c-white;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  h6 {
+    font-weight: 700;
+    margin-bottom: $gutter;
+  }
+  &:hover {
+    color: $c-white;
+  }
+  img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: -1;
+    max-width: 90%;
+  }
+  &--red {
+    background: $c-red;
+  }
+  &--gray {
+    background: #575556;
+  }
+  &--gray-light {
+    background: #a6a6a6;
+  }
+  &--big {
+    height: 490px;
+    @media (max-width: $breakpoint-sm) {
+      height: 400px;
+    }
+    img {
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 50px;
+    }
+  }
+}
+
+.advantages {
+  margin-top: 50px;
+  @media (max-width: $breakpoint-lg) {
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    flex-wrap: wrap;
+  }
+  &__items {
+    width: 31%;
+    @media (max-width: $breakpoint-lg) {
+      width: 50%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+  }
+  &__center {
+    width: 38%;
+    position: relative;
+    color: $c-white;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    @media (max-width: $breakpoint-lg) {
+      display: none;
+    }
+    &::after {
+      width: 293px;
+      height: 293px;
+      position: absolute;
+      content: '';
+      background: $c-red;
+      transform: rotate(-45deg);
+      transform-origin: top left;
+      top: 30px;
+      left: 15px;
+      z-index: -1;
+    }
+    span {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.advantages-item {
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 30px;
+  }
+  &__icon {
+    height: 124px;
+    margin: auto;
+    margin-bottom: $gutter;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,361 @@
+<% var data = { title: "Главная" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<main class="main">
+  <section class="top">
+    <div id="dots-container" class="dots-container container"></div>
+    <div class="top-slider slider">
+      <div>
+        <div class="top-slider__item" style="background: url('img/top-slider-pic.jpg')">
+          <div class="container">
+            <div class="content">
+              <span>Новое цветовое исполнение</span>
+              <h2><span class="red-text">DICITY Design</span> новое цветовое исполнение Matt Black!</h2>
+              <p>
+                Чёрный цвет способен преобразить пространство: сделать его более насыщенным и объёмным. Вентилятор в
+                оттенке Matt Black поддержит акцентую тёмную стену или нестандартную сантехнику.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="top-slider__item" style="background: url('img/top-slider-pic.jpg')">
+          <div class="container">
+            <div class="content">
+              <span>Lorem, ipsum dolor.</span>
+              <h2><span class="red-text">Lorem, ipsum.</span> Lorem ipsum dolor sit.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam unde dignissimos incidunt
+                molestiae est ipsam iure eum. Debitis, commodi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section main-about">
+    <div class="container">
+      <h2 class="section__title">Мы <span class="red-text">ERA</span> Group</h2>
+      <p class="main-about__text">
+        ERA Group&nbsp;&mdash; один из&nbsp;лидеров в&nbsp;производстве вентиляционных систем с&nbsp;1997&nbsp;года. Под
+        торговыми марками ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств
+        и&nbsp;комплектующих, в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители
+        и&nbsp;воздуховоды. <br />
+        В&nbsp;Рязани было образовано ООО &laquo;ЭКОВЕНТ&raquo;. Это была одна из&nbsp;первых на&nbsp;постсоветском
+        пространстве компаний по&nbsp;производству систем вентиляции.
+      </p>
+    </div>
+
+    <div class="main-about__grid d-flex flex-wrap">
+      <div class="main-about__grid-col">
+        <div class="main-about-item main-about-item--first">
+          <div class="content">
+            <p>Ассортимент наименований <b>ERA</b> Group</p>
+            <h2>2 200</h2>
+            <a href="#" class="btn btn-outline-white">Перейти в каталог</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-about__grid-col">
+        <div class="main-about-item main-about-item--second">
+          <div class="content d-flex j-c-between">
+            <div class="content__item">
+              <h2 class="red-text">14 000 м<sup>2</sup></h2>
+              <p>Собственное производство <br /><b>ERA</b> Group</p>
+            </div>
+            <div class="content__item">
+              <h2>500</h2>
+              <p>Профессионалов <br />в штате <b>ERA</b> Group</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-about__grid-col">
+        <div class="main-about-item main-about-item--third">
+          <div class="content d-flex flex-column j-c-end">
+            <h2 class="red-text">50</h2>
+            <p>Поставки <b class="red-text">ERA</b> Group более, чем в <span class="red-text">50 стран мира</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="main-about__grid-col">
+        <div class="main-about-item main-about-item--fourth">
+          <div class="content">
+            <h2>36 168 000</h2>
+            <p>Реализовано изделий <b>ERA</b> Group</p>
+            <a href="#" class="btn btn-outline-white">Связаться с <b>ERA</b> Group</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trade-marks-wrapper">
+    <div class="container">
+      <h2 class="section__title">Торговые марки <span class="red-text">ERA</span> Group</h2>
+
+      <div class="trade-marks d-flex">
+        <div class="trade-marks-item">
+          <div class="trade-marks-item__logo red d-flex">
+            <img src="img/logo/trade-mark-1.png" alt="" />
+          </div>
+          <p>Широкий ассортимент товаров <b>ERA</b></p>
+        </div>
+        <div class="trade-marks-item">
+          <div class="trade-marks-item__logo gray d-flex">
+            <img src="img/logo/trade-mark-2.png" alt="" />
+          </div>
+          <p>Широкий ассортимент товаров <b>ERA PRO</b></p>
+        </div>
+        <div class="trade-marks-item">
+          <div class="trade-marks-item__logo blue d-flex">
+            <img src="img/logo/trade-mark-3.png" alt="" />
+          </div>
+          <p>Декоративные экраны и ревизионные люки <b>EVECS</b></p>
+        </div>
+        <div class="trade-marks-item">
+          <div class="trade-marks-item__logo brown d-flex">
+            <img src="img/logo/trade-mark-4.png" alt="" />
+          </div>
+          <p>Дизайнерские и умные товары для требовательных клиентов <b>DICITI</b></p>
+        </div>
+        <div class="trade-marks-item">
+          <div class="trade-marks-item__logo sky d-flex">
+            <img src="img/logo/trade-mark-5.png" alt="" />
+          </div>
+          <p>Вентиляционные товары для дома по доступным ценам <b>AURAMAX</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section main-video">
+    <div class="container">
+      <div class="main-video__content">
+        <h2 class="section__title">Video ERA Group</h2>
+        <p>
+          Всего за 5 минут видео вы узнаете о производстве, материалах, технических характеристиках торговых марок
+          <b>ERA</b> Group
+        </p>
+        <a href="#" class="btn btn-outline-white">Смотреть все видео</a>
+      </div>
+      <div class="main-video-slider-wrapper">
+        <div class="main-video__slider slider slider--dots-black">
+          <div>
+            <div class="video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r9KjDhs140E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <div class="video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r9KjDhs140E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <div class="video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r9KjDhs140E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <div class="video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r9KjDhs140E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <div class="video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/r9KjDhs140E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stock-wrapper">
+    <div class="container">
+      <h2 class="section__title">Ассортимент <span class="red-text">ERA</span> Group</h2>
+      <p class="section__text">
+        Под торговыми марками ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств
+        и&nbsp;комплектующих, в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители
+        и&nbsp;воздуховоды.
+      </p>
+
+      <div class="stock-grid d-flex flex-wrap">
+        <div class="stock-grid__col load-more-content stock-grid__col--w50">
+          <a href="#" class="stock stock--red stock--big">
+            <h6>Бытовые вентиляторы</h6>
+            <p>
+              Под торговыми марками ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств
+              и&nbsp;комплектующих, в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители
+              и&nbsp;воздуховоды.
+            </p>
+            <img src="img/main-page/stock-1.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content stock-grid__col--w50">
+          <a href="#" class="stock stock--gray">
+            <h6>Дизайнерские вентиляторы</h6>
+            <img src="img/main-page/stock-2.png" alt="" />
+          </a>
+          <a href="#" class="stock stock--gray-light">
+            <h6>Коммерческие вентиляторы</h6>
+            <img src="img/main-page/stock-6.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--gray">
+            <h6>Вентиляционные наборы</h6>
+            <img src="img/main-page/stock-3.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--gray-light">
+            <h6>Изделия для защиты от обратной тяги</h6>
+            <img src="img/main-page/stock-4.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--red">
+            <h6>
+              Крепежные и изоляционные <br />
+              материалы
+            </h6>
+            <img src="img/main-page/stock-5.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--gray">
+            <h6>Вентиляционные наборы</h6>
+            <img src="img/main-page/stock-3.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--gray-light">
+            <h6>Изделия для защиты от обратной тяги</h6>
+            <img src="img/main-page/stock-4.png" alt="" />
+          </a>
+        </div>
+        <div class="stock-grid__col load-more-content">
+          <a href="#" class="stock stock--red">
+            <h6>
+              Крепежные и изоляционные <br />
+              материалы
+            </h6>
+            <img src="img/main-page/stock-5.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex j-c-center">
+        <a href="#" class="btn btn-outline-dark load-more-toggler">Показать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section advantages-wrapper">
+    <div class="container">
+      <h2 class="section__title">Преимущества <span class="red-text">ERA</span> Group</h2>
+      <p class="section__text">
+        Под торговыми марками ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств
+        и&nbsp;комплектующих, в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители
+        и&nbsp;воздуховоды.
+      </p>
+      <div class="advantages d-flex a-i-center">
+        <div class="advantages__items d-flex flex-wrap">
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-1.png" alt="" />
+            </div>
+            Собственная производственная база
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-2.png" alt="" />
+            </div>
+            Склад класса А
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-5.png" alt="" />
+            </div>
+            Только качественная продукция
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-6.png" alt="" />
+            </div>
+            Широкий ассортимент
+          </div>
+        </div>
+        <div class="advantages__center d-flex">
+          <span>Почему <br /><b>ERA</b> Group? </span>
+        </div>
+        <div class="advantages__items d-flex flex-wrap">
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-3.png" alt="" />
+            </div>
+            Эффективная система логистики
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-4.png" alt="" />
+            </div>
+            Собственная лаборатория и конструкторское бюро
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-7.png" alt="" />
+            </div>
+            Квалифицированная команда
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item__icon d-flex">
+              <img src="img/icons/adv-ic-8.png" alt="" />
+            </div>
+            Поддержка дилеров и дистрибьютеров
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%= _.template(require('./../includes/section-contact.html').default)(data) %> <%=
+  _.template(require('./../includes/section-news.html').default)(data) %>
+</main>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

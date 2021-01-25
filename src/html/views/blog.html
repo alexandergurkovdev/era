@@ -1,0 +1,188 @@
+<% var data = { title: "Блог" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="inner-page">
+  <section class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="d-flex">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="blog.html" class="active">Блог</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <h3 class="inner-page__title">Блог и новости от <span class="red-text">ERA</span> Group</h3>
+
+      <div class="tabs">
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item active">
+            <a href="#" class="tabs-nav__link">Новости</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a href="#" class="tabs-nav__link">СМИ о ERA Group</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a href="#" class="tabs-nav__link">Новинки продуктов от ERA Group</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a href="#" class="tabs-nav__link">Видео</a>
+          </li>
+          <li class="tabs-nav__item">
+            <a href="#" class="tabs-nav__link">Полезно знать</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tags">
+        <a href="#" class="tags__item">#Системы вентиляции</a>
+        <a href="#" class="tags__item">#Новинки</a>
+        <a href="#" class="tags__item active">#Выставки</a>
+      </div>
+
+      <div class="blog-grid d-flex flex-wrap">
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag"><b>Новости</b></p>
+            <a href="#" class="blog-article__title"><b>ERA Group впервые примет участие в&nbsp;онлайн-выставке</b></a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag">Новости</p>
+            <a href="#" class="blog-article__title">ERA Group впервые примет участие в&nbsp;онлайн-выставке</a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag"><b>Новости</b></p>
+            <a href="#" class="blog-article__title"><b>ERA Group впервые примет участие в&nbsp;онлайн-выставке</b></a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag">Новости</p>
+            <a href="#" class="blog-article__title">ERA Group впервые примет участие в&nbsp;онлайн-выставке</a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-grid__col blog-grid__col--add">
+          <a href="#" class="blog-add d-flex a-i-start j-c-between">
+            <h3 class="blog-add__title">Новинки вентиляторов от ERA Group</h3>
+            <img src="img/blog-page/blog-add.png" alt="" />
+          </a>
+        </div>
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag">Новости</p>
+            <a href="#" class="blog-article__title">ERA Group впервые примет участие в&nbsp;онлайн-выставке</a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-grid__col">
+          <div class="blog-article">
+            <a href="#" class="blog-article__image">
+              <img src="img/blog-page/article-example.jpg" alt="" />
+            </a>
+            <p class="blog-article__tag">Новости</p>
+            <a href="#" class="blog-article__title">ERA Group впервые примет участие в&nbsp;онлайн-выставке</a>
+            <p class="blog-article__text">
+              С&nbsp;21&nbsp;по&nbsp;23&nbsp;июля будет проходить онлайн-выставка The Big5 digital festival Africa. Это
+              новая платформа от&nbsp;организаторов крупнейшей профильной выставки Ближнего Востока
+            </p>
+            <p class="blog-article__date"><i>27 августа</i></p>
+            <div class="tags">
+              <a href="#" class="tags__item">#Системы вентиляции</a>
+              <a href="#" class="tags__item">#Новинки</a>
+              <a href="#" class="tags__item active">#Выставки</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#" class="pagination__arr left">
+          <img src="img/icons/pag-arr-l.png" alt="" />
+        </a>
+        <a href="#" class="pagination__item">1</a>
+        <a href="#" class="pagination__item active">2</a>
+        <span class="pagination__dots">...</span>
+        <a href="#" class="pagination__item">20</a>
+        <a href="#" class="pagination__arr right">
+          <img src="img/icons/pag-arr-r.png" alt="" />
+        </a>
+        <a href="#" class="pagination__show-all">Показать все</a>
+      </div>
+    </div>
+  </section>
+</div>
+<%= _.template(require('./../includes/section-news.html').default)(data) %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>

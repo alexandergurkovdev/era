@@ -1,0 +1,218 @@
+.us-mission {
+  text-align: center;
+  padding-bottom: 90px;
+  @media (max-width: $breakpoint-sm) {
+    padding-bottom: 50px;
+  }
+  &__title,
+  &__text {
+    width: 100%;
+  }
+  &__title {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  &__item {
+    width: 33.333%;
+    padding: 0 35px;
+    margin-top: 35px;
+    @media (max-width: $breakpoint-md) {
+      width: 50%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+    p {
+      color: $c-red;
+      font-size: 18px;
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.history-banner {
+  background: url('../img/main-about-pic-1.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 380px;
+  overflow-x: hidden;
+  @media (max-width: $breakpoint-xs) {
+    display: none;
+  }
+  &__layer {
+    position: absolute;
+    height: 100%;
+    background: rgba($c-red, 0.5);
+    width: 100%;
+    @include transition(200ms, left);
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 380px 160px;
+      border-color: transparent transparent rgba($c-red, 0.5) transparent;
+      top: 0;
+      left: -160px;
+      z-index: 5;
+    }
+  }
+}
+
+.history-tabs {
+  margin-top: 30px;
+  &__list {
+    border-bottom: 15px solid #d6d6d6;
+    width: calc(100% - 7px);
+    position: relative;
+    @media (max-width: $breakpoint-xs) {
+      border: 0;
+      flex-wrap: wrap;
+    }
+    &::before {
+      position: absolute;
+      right: -7px;
+      top: 100%;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7.5px 0 7.5px 7px;
+      border-color: transparent transparent transparent #d6d6d6;
+      z-index: 2;
+      @media (max-width: $breakpoint-xs) {
+        display: none;
+      }
+    }
+    li {
+      width: 12.5%;
+      position: relative;
+      padding-bottom: 8px;
+      cursor: pointer;
+      @media (max-width: $breakpoint-xs) {
+        padding-bottom: 5px;
+        padding-right: 15px;
+        width: auto;
+      }
+      &::after {
+        height: 15px;
+        content: '';
+        background: $c-red;
+        width: 100%;
+        opacity: 0;
+        @include transition(200ms, opacity);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+        @media (max-width: $breakpoint-xs) {
+          display: none;
+        }
+      }
+      &::before {
+        position: absolute;
+        right: -7px;
+        opacity: 0;
+        @include transition(200ms, opacity);
+        top: 100%;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 7px;
+        border-color: transparent transparent transparent $c-red;
+        z-index: 2;
+        @media (max-width: $breakpoint-xs) {
+          display: none;
+        }
+      }
+      &.active {
+        &::after,
+        &::before {
+          opacity: 1;
+        }
+      }
+      a {
+        display: block;
+        text-align: center;
+        line-height: 1;
+        font-weight: 700;
+        @media (max-width: $breakpoint-md) {
+          font-size: 15px;
+        }
+        @media (max-width: $breakpoint-xs) {
+          text-align: left;
+          font-size: 20px;
+        }
+      }
+      &.active {
+        a {
+          color: $c-red;
+        }
+      }
+    }
+  }
+  &__content {
+    padding-top: 30px;
+    &-inner {
+      @media (max-width: $breakpoint-md) {
+        flex-wrap: wrap;
+      }
+    }
+    .date {
+      line-height: 1;
+      font-size: 60px;
+      color: #d6d6d6;
+      min-width: 190px;
+      @media (max-width: $breakpoint-md) {
+        min-width: 100%;
+        margin-bottom: 20px;
+      }
+      @media (max-width: $breakpoint-sm) {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+    }
+    .content {
+      p {
+        margin-bottom: 20px;
+      }
+      ul {
+        @media (max-width: $breakpoint-xs) {
+          flex-wrap: wrap;
+        }
+        li {
+          margin-top: 15px;
+          @media (max-width: $breakpoint-xs) {
+            width: 100%;
+          }
+          span {
+            display: block;
+            color: $c-red;
+            line-height: 1;
+            font-size: 60px;
+            margin-bottom: 10px;
+            @media (max-width: $breakpoint-sm) {
+              font-size: 40px;
+            }
+          }
+          p {
+            margin: 0;
+            br {
+              @media (max-width: $breakpoint-xs) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.history-btn {
+  margin-top: 40px;
+}

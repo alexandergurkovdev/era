@@ -1,0 +1,168 @@
+<% var data = { title: "О компании" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="inner-page pb-0">
+  <section class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="d-flex">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="about.html" class="active">О компании</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="about-wrapper">
+    <div class="container">
+      <h3 class="inner-page__title">О компании <span class="red-text">ERA</span> Group</h3>
+      <div class="tabs about-tabs">
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item active"><a class="tabs-nav__link" href="about.html">О компании</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about-history.html">История</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about-faces.html">Лица</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about-vacancies.html">Вакансии</a></li>
+        </ul>
+        <div class="tabs-content">
+          <p class="about-tabs__text">
+            ERA Group&nbsp;&mdash; один из&nbsp;лидеров в&nbsp;производстве вентиляционных систем. Под торговыми марками
+            ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств и&nbsp;комплектующих,
+            в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители и&nbsp;воздуховоды.
+            В&nbsp;Рязани было образовано ООО &laquo;ЭКОВЕНТ&raquo;. Это была одна из&nbsp;первых на&nbsp;постсоветском
+            пространстве компаний по&nbsp;производству систем вентиляции.
+          </p>
+
+          <h6 class="about-tabs__title"><b>Производим оборудование для вентиляционных систем с&nbsp;1997 года</b></h6>
+
+          <div class="counter d-flex j-c-between">
+            <div class="counter__item">
+              <div class="count red-text" id="count-1"></div>
+              <p>
+                <b>наименований <br />Ассортимент <br /><span class="red-text">ERA</span> Group</b>
+              </p>
+            </div>
+            <div class="counter__item">
+              <div class="count red-text" id="count-2"></div>
+              <p>
+                <b
+                  >кв.м <br />
+                  производственная площадь <br />ERA Group <span class="red-text">ERA</span> Group</b
+                >
+              </p>
+            </div>
+            <div class="counter__item">
+              <div class="count red-text" id="count-3"></div>
+              <p>
+                <b>Профессионалов в штате</b>
+              </p>
+            </div>
+            <div class="counter__item">
+              <div class="count red-text" id="count-4"></div>
+              <p>
+                <b>штук изделий <br />Реализация <span class="red-text">ERA</span> Group</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-slider-wrapper">
+    <div class="dots-container container slider--dots-black">
+      <button class="about-slider_next reset-btn" id="about-slider-1-next">
+        <img src="img/icons/slider-arr-white.png" width="18" alt="" />
+      </button>
+    </div>
+    <div class="about-slider slider" id="about-slider-1">
+      <div>
+        <div class="about-slider__item" style="background: url('img/about-page/about-slider-example.jpg')">
+          <div class="container">
+            <div class="content">
+              <h2>Экскурсия на производство и склад <b>ERA Group</b></h2>
+              <p><b>Нанотехнологичная линия с ЧПУ</b> <br />Era Group представила новый вентилятор DICITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="about-slider__item" style="background: url('img/about-page/about-slider-example.jpg')">
+          <div class="container">
+            <div class="content">
+              <h2>Экскурсия на производство и склад <b>ERA Group</b></h2>
+              <p><b>Нанотехнологичная линия с ЧПУ</b> <br />Era Group представила новый вентилятор DICITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-partners-wrapper">
+    <div class="container">
+      <h4><b>С нами работаю ведущие компании России и мира</b></h4>
+      <div class="about-partners d-flex a-i-center j-c-center">
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-1.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-2.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-1.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-2.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-1.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-2.png" alt="" />
+        </div>
+        <div class="about-partners__item">
+          <img src="img/about-page/partner-1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="d-flex j-c-center">
+        <a href="#" class="btn btn-red"> Стать партнёром ERA Group</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-slider-wrapper">
+    <div class="dots-container container slider--dots-black">
+      <button class="about-slider_next reset-btn" id="about-slider-2-next">
+        <img src="img/icons/slider-arr-white.png" width="18" alt="" />
+      </button>
+    </div>
+    <div class="about-slider slider" id="about-slider-2">
+      <div>
+        <div class="about-slider__item" style="background: url('img/about-page/about-slider-example.jpg')">
+          <div class="container">
+            <div class="content">
+              <h2>Экскурсия на производство и склад <b>ERA Group</b></h2>
+              <p><b>Нанотехнологичная линия с ЧПУ</b> <br />Era Group представила новый вентилятор DICITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="about-slider__item" style="background: url('img/about-page/about-slider-example.jpg')">
+          <div class="container">
+            <div class="content">
+              <h2>Экскурсия на производство и склад <b>ERA Group</b></h2>
+              <p><b>Нанотехнологичная линия с ЧПУ</b> <br />Era Group представила новый вентилятор DICITY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%= _.template(require('./../includes/section-contact.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/section-news.html').default)(data) %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>

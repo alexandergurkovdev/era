@@ -1,0 +1,38 @@
+.slick-dots {
+  bottom: -28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    button {
+      width: 18px;
+      height: 3px;
+      background: $c-white;
+      padding: 0;
+      @include transition(200ms, background);
+      &::before {
+        display: none;
+      }
+    }
+    &.slick-active {
+      button {
+        background: $c-red;
+      }
+    }
+  }
+}
+
+.slider {
+  margin-bottom: 28px !important;
+  &--dots-black {
+    .slick-dots {
+      li {
+        &.slick-active {
+          button {
+            background: $c-main-text;
+          }
+        }
+      }
+    }
+  }
+}

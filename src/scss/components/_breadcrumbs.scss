@@ -1,0 +1,33 @@
+.breadcrumbs-wrapper {
+  padding-bottom: 40px;
+}
+.breadcrumbs {
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: $c-gray-md;
+        font-size: 14px;
+        display: block;
+        position: relative;
+        margin-right: 10px;
+        &::after {
+          content: '>';
+          margin-left: 10px;
+        }
+        &:hover {
+          color: $c-main-text;
+        }
+        &.active {
+          color: $c-red;
+          &:hover {
+            color: $c-red;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

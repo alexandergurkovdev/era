@@ -1,0 +1,43 @@
+.btn {
+  font-size: 16px;
+  border-radius: 0.4em;
+  padding: 1em 2.7em;
+  line-height: 1;
+  display: inline-block;
+  @include transition(200ms, background, color, border);
+  text-align: center;
+  &-outline-white {
+    border: 1px solid $c-white;
+    color: $c-white;
+    &:hover,
+    &:focus {
+      background: $c-white;
+      color: $c-main-text;
+    }
+  }
+  &-outline-dark {
+    border: 1px solid $c-main-text;
+    color: $c-main-text;
+    &:hover,
+    &:focus {
+      background: $c-main-text;
+      color: $c-white;
+    }
+  }
+  &-red {
+    background: $c-red;
+    border: 0;
+    color: $c-white;
+    &:hover,
+    &:focus {
+      background: darken($c-red, 10%);
+      color: $c-white;
+    }
+  }
+}
+
+.reset-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+}
