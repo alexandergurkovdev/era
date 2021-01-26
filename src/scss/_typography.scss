@@ -59,3 +59,14 @@ i {
     }
   }
 }
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    &:before {
+      content: counter(item) '. ';
+    }
+  }
+}

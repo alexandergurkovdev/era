@@ -1,0 +1,85 @@
+.vacancies-tabs {
+  &__nav {
+    margin-bottom: 35px;
+    li {
+      margin-right: 20px;
+      margin-bottom: 10px;
+      a {
+        display: inline-block;
+        background: $c-gray-light;
+        font-size: 14px;
+        border-radius: 4px;
+        padding: 10px 14px;
+        line-height: 1;
+      }
+      &.active {
+        a {
+          background: $c-red;
+          color: $c-white;
+        }
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 50px;
+  }
+}
+
+.vacancies-accordion {
+  .accordion__item {
+    a {
+      span:not(.vacancies-accordion__price) {
+        width: 340px;
+        @media (max-width: $breakpoint-sm) {
+          width: auto;
+          margin-right: 10px;
+        }
+      }
+      .vacancies-accordion__price {
+        @include transition(200ms, opacity, visibility);
+        opacity: 0;
+        visibility: hidden;
+        margin-left: auto;
+        font-size: 30px;
+        line-height: 1;
+        color: $c-main-text;
+        @media (max-width: $breakpoint-sm) {
+          font-size: 18px;
+        }
+      }
+      &.active {
+        .vacancies-accordion__price {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.vacancy {
+  @media (max-width: $breakpoint-sm) {
+    flex-wrap: wrap;
+  }
+  &__content {
+    padding-right: 210px;
+    @media (max-width: $breakpoint-lg) {
+      padding-right: 150px;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding-right: 50px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    ol {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

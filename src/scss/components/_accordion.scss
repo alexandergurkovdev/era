@@ -1,0 +1,33 @@
+.accordion {
+  &__item {
+    height: auto;
+    a {
+      color: $c-gray-md;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      border-radius: 4px;
+      padding: 20px 10px;
+
+      img {
+        @include transition(200ms, transform, filter);
+        filter: invert(60%);
+        transform: rotate(-90deg);
+        width: 10px;
+      }
+      &.active {
+        background: $c-gray-light;
+        color: $c-main-text;
+        img {
+          filter: none;
+          transform: none;
+        }
+      }
+    }
+  }
+  &__content {
+    display: none;
+    padding: 10px 0 35px;
+    border-bottom: 2px solid #dfdfdf;
+  }
+}

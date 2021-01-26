@@ -6,6 +6,7 @@ import './components/dropdown';
 import './components/inputCounter';
 import './components/tabs';
 import './components/history-banner';
+import './components/accordion';
 
 // sliders
 import './sliders/top-slider';

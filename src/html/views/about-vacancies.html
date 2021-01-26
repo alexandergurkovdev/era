@@ -1,0 +1,127 @@
+<% var data = { title: "О компании" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="inner-page pb-0">
+  <section class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="d-flex">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="about.html" class="active">О компании</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="about-wrapper">
+    <div class="container">
+      <h3 class="inner-page__title">О компании <span class="red-text">ERA</span> Group</h3>
+      <div class="tabs about-tabs pb-0">
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about.html">О компании</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about-history.html">История</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="about-faces.html">Лица</a></li>
+          <li class="tabs-nav__item active"><a class="tabs-nav__link" href="about-vacancies.html">Вакансии</a></li>
+        </ul>
+        <div class="tabs-content">
+          <div class="tabs js-tabs vacancies-tabs">
+            <ul class="vacancies-tabs__nav d-flex flex-wrap">
+              <li>
+                <a href="#tab-1">Рязань (Центральный офис)</a>
+              </li>
+              <li>
+                <a href="#tab-2">Ростов-на-Дону (Филиал)</a>
+              </li>
+              <li>
+                <a href="#tab-3">Казань (Филиал)</a>
+              </li>
+            </ul>
+            <div id="tab-1" class="vacancies-tabs__content">
+              <p class="vacancies-tabs__text">
+                ERA Group&nbsp;&mdash; один из&nbsp;лидеров в&nbsp;производстве вентиляционных систем. Под торговыми
+                марками ERA, DICITI, EVECS и&nbsp;AURAMAX выпускается весь спектр вентиляционных устройств
+                и&nbsp;комплектующих, в&nbsp;том числе бытовые и&nbsp;коммерческие вентиляторы, воздухораспределители
+                и&nbsp;воздуховоды. В&nbsp;Рязани было образовано ООО &laquo;ЭКОВЕНТ&raquo;. Это была одна
+                из&nbsp;первых на&nbsp;постсоветском пространстве компаний по&nbsp;производству систем вентиляции.
+              </p>
+
+              <div class="accordion vacancies-accordion">
+                <div class="accordion__item">
+                  <a href="#">
+                    <span>Оператор токарной линии</span>
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                    <span class="vacancies-accordion__price">50 000 руб.</span>
+                  </a>
+                  <div class="accordion__content">
+                    <div class="vacancy d-flex a-i-start j-s-between">
+                      <div class="vacancy__content">
+                        <p>
+                          Работа на современном автоматизированном производстве, отвечать за управление электронным
+                          оборудованием, автопогрузчиком, процессом производства стекла или нанесения покрытий, на линии
+                          магнетронного напыления.
+                        </p>
+                        <h6><b>Требование к кандидату</b></h6>
+                        <ol>
+                          <li>
+                            Образование: высшее, среднее специальное (желательно&nbsp;&mdash; технические
+                            специальности);
+                          </li>
+                          <li>
+                            Готовность к&nbsp;работе в&nbsp;сменном режиме (дневные/ночные смены продолжительностью
+                            12ч., периодичность 2/2);
+                          </li>
+                          <li>
+                            Ответственное и&nbsp;внимательное отношение к&nbsp;выполняемой работе
+                            и&nbsp;к&nbsp;соблюдению правил безопасности на&nbsp;производстве;
+                          </li>
+                          <li>
+                            Желание работать и&nbsp;развиваться профессионально, внедрять инновации, активно участвовать
+                            в&nbsp;командной работе.
+                          </li>
+                        </ol>
+                        <h6><b>Условия работы</b></h6>
+                        <ol>
+                          <li>
+                            Трудоустройство в&nbsp;соответствии с&nbsp;ТК&nbsp;РФ (предоставление всех соц.гарантий);
+                          </li>
+                          <li>
+                            Высокий уровень безопасности труда, соблюдение требований по&nbsp;охране труда
+                            на&nbsp;международном уровне;
+                          </li>
+                          <li>
+                            График работы: сменный (дневные/ночные смены продолжительностью 12ч., периодичность 2/2);
+                          </li>
+                        </ol>
+                      </div>
+                      <button class="btn btn-red">Откликнуться</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <a href="#">
+                    <span>Оператор ЧПУ</span>
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                    <span class="vacancies-accordion__price">50 000 руб.</span>
+                  </a>
+                  <div class="accordion__content">
+                    <p>
+                      Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse
+                      aliquam erat hendrerit vehicula vestibulum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="vacancies-tabs__content">2</div>
+            <div id="tab-3" class="vacancies-tabs__content">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%= _.template(require('./../includes/section-contact.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/section-news.html').default)(data) %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>
