@@ -1,0 +1,104 @@
+.partners-page {
+  .about-partners-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+.partners-wrapper {
+  .partners-text {
+    margin-bottom: 50px;
+  }
+}
+
+.partners-why {
+  margin: 0 -15px 80px;
+  text-align: center;
+  @media (max-width: $breakpoint-xs) {
+    margin-bottom: 50px;
+  }
+  &__title {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 24px;
+    @media (max-width: $breakpoint-xs) {
+      font-size: 20px;
+    }
+  }
+  &__item {
+    width: 20%;
+    padding: 0 15px;
+    margin-top: 30px;
+    @media (max-width: $breakpoint-md) {
+      width: 33.333%;
+    }
+    @media (max-width: $breakpoint-xs) {
+      width: 50%;
+    }
+    .icon {
+      height: 124px;
+      margin-bottom: 15px;
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.partners-tabs {
+  margin-bottom: 40px;
+  .tabs-nav {
+    li {
+      a {
+        @media (max-width: $breakpoint-md) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.documentaion {
+  margin: 0 -15px;
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column-reverse;
+  }
+  &__content {
+    padding: 0 15px;
+    width: 60%;
+    margin-top: 30px;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+    a {
+      margin: 10px 0 40px;
+      display: block;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 30px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        width: 18px;
+      }
+    }
+  }
+  &__image {
+    margin-top: 30px;
+    padding: 0 15px;
+    width: 40%;
+    height: 455px;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
