@@ -43,8 +43,7 @@
       padding: 0;
       margin-bottom: 15px;
     }
-    input,
-    select {
+    input {
       display: block;
       width: 100%;
       font-size: 14px;
@@ -63,13 +62,6 @@
       &::placeholder {
         color: $gray-dark;
       }
-    }
-    select {
-      height: 30px;
-      background: $c-gray-light;
-      color: $gray-dark;
-      border: 0;
-      border-radius: 4px;
     }
     &:nth-child(2),
     &:nth-child(3),

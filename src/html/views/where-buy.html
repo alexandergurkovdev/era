@@ -1,0 +1,245 @@
+<% var data = { title: "Где купить" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="inner-page where-buy-page pb-0">
+  <section class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="d-flex">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="where-buy.html" class="active">Где купить</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="where-buy-wrapper">
+    <div class="container">
+      <h3 class="inner-page__title">Где купить продукцию <span class="red-text">Era</span> Group</h3>
+      <div class="where-buy">
+        <div class="where-buy__header d-flex">
+          <form class="where-buy__form d-flex flex-wrap">
+            <div class="where-buy__form-item">
+              <select name="country" id="country" class="underlined">
+                <option selected>Страна</option>
+                <option value="ru">Россия</option>
+                <option value="ua">Украина</option>
+              </select>
+            </div>
+            <div class="where-buy__form-item">
+              <select name="region" id="region" class="underlined">
+                <option selected>Область</option>
+                <option value="ryz">Рязанская</option>
+                <option value="mos">Московская</option>
+              </select>
+            </div>
+            <div class="where-buy__form-item">
+              <select name="city" id="city" class="underlined">
+                <option selected>Город</option>
+                <option value="rzn">Рязань</option>
+                <option value="kas">Касимов</option>
+              </select>
+            </div>
+            <div class="where-buy__form-item">
+              <select name="trade-line" id="trade-line" class="underlined">
+                <option selected>Торговая сеть</option>
+                <option value="1">lorem 1</option>
+                <option value="2">lorem 2</option>
+              </select>
+            </div>
+          </form>
+          <div class="tabs js-tabs vacancies-tabs where-buy-tabs">
+            <ul class="vacancies-tabs__nav d-flex">
+              <li>
+                <a href="#where-buy-tab-1">Список</a>
+              </li>
+              <li>
+                <a href="#where-buy-tab-2">На карте</a>
+              </li>
+            </ul>
+            <div id="where-buy-tab-1" class="where-buy-tabs__content">
+              <table class="where-buy-table">
+                <thead>
+                  <th><b>Название магазина</b></th>
+                  <th><b>Адрес</b></th>
+                  <th><b>Время работы</b></th>
+                  <th><b>Телефон</b></th>
+                  <th><b>Электронная почта и&nbsp;сайт</b></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                  <tr class="where-buy-table__hidden">
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                  <tr class="where-buy-table__hidden">
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                  <tr class="where-buy-table__hidden">
+                    <td>
+                      <b>ООО «Эра трейд»</b>
+                    </td>
+                    <td>г. Рязань, ул Новоселов, д.5</td>
+                    <td>
+                      9:00–18:00 <br />
+                      <b>Сб:</b> 10:00–17:00 <br />
+                      <b>Вс:</b> выходной
+                    </td>
+                    <td>
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </td>
+                    <td>
+                      <a href="mailto:diy@era.trade">diy@era.trade</a>
+                      <a href="era.trade.com">era.trade.com</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex j-c-center">
+                <button class="btn btn-outline-dark" id="where-buy-more"></button>
+              </div>
+            </div>
+            <div id="where-buy-tab-2" class="where-buy-tabs__content">
+              <div class="contact-item d-flex">
+                <div class="contact-item__text">
+                  <div class="where-buy-contact d-flex flex-wrap">
+                    <div class="where-buy-contact__item-left">
+                      <h6><b>Название магазина</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-right">
+                      <h6><b>ООО «Эра трейд»</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-left">
+                      <h6><b>Адрес</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-right">
+                      <p>г. Рязань, ул Новоселов, д.5</p>
+                    </div>
+                    <div class="where-buy-contact__item-left">
+                      <h6><b>Время работы</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-right">
+                      <p>
+                        9:00–18:00 <br />
+                        <b>Сб:</b> 10:00–17:00 <br />
+                        <b>Вс:</b> выходной
+                      </p>
+                    </div>
+                    <div class="where-buy-contact__item-left">
+                      <h6><b>Телефон</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-right">
+                      <a href="tel:+79105745255">+7 910 574-52-55</a>
+                    </div>
+                    <div class="where-buy-contact__item-left">
+                      <h6><b>Электронная почта и сайт</b></h6>
+                    </div>
+                    <div class="where-buy-contact__item-right">
+                      <a href="mailto:diy@era.trade" class="blue-link" style="display: block">diy@era.trade</a>
+                      <a href="era.trade.com" target="_blank" class="blue-link" style="display: block">era.trade.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item__map">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/-/CCUMMPUvKD"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%= _.template(require('./../includes/section-news.html').default)(data) %>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

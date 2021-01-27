@@ -92,6 +92,7 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+    width: auto;
     @media (max-width: $breakpoint-xs) {
       font-size: 14px;
     }

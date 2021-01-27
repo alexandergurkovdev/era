@@ -7,6 +7,7 @@ import './components/inputCounter';
 import './components/tabs';
 import './components/history-banner';
 import './components/accordion';
+import './components/where-buy-more';
 
 // sliders
 import './sliders/top-slider';

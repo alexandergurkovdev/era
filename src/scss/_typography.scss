@@ -19,6 +19,13 @@ a {
   &:hover {
     color: $c-red;
   }
+  &.blue-link {
+    color: $c-primary;
+    text-decoration: underline;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
 }
 
 b {

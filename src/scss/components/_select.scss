@@ -1,0 +1,15 @@
+select {
+  height: 30px;
+  background: $c-gray-light;
+  color: $gray-dark;
+  border: 0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+  &.underlined {
+    background: $c-white;
+    border: 1px solid $c-gray-light;
+  }
+}

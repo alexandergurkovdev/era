@@ -18,6 +18,7 @@
   &-outline-dark {
     border: 1px solid $c-main-text;
     color: $c-main-text;
+    background: none;
     &:hover,
     &:focus {
       background: $c-main-text;
