@@ -1,0 +1,67 @@
+.contact-page-wrapper {
+  .vacancies-tabs__text {
+    margin-bottom: 0;
+  }
+  .faces {
+    margin-top: 30px;
+  }
+}
+
+.contact-item {
+  margin: 0 -15px;
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column-reverse;
+  }
+  &__text,
+  &__map {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    width: 40%;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      @media (max-width: $breakpoint-xs) {
+        font-size: 20px;
+      }
+    }
+    .item {
+      margin-bottom: 15px;
+      a {
+        color: $c-main-text;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          color: $c-primary;
+        }
+      }
+    }
+    &-footer {
+      margin-top: 70px;
+      @media (max-width: $breakpoint-md) {
+        margin-top: 15px;
+      }
+      a {
+        color: $c-primary;
+        display: block;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
+  &__map {
+    width: 60%;
+    height: 380px;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
