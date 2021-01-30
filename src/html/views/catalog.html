@@ -1,0 +1,727 @@
+<% var data = { title: "Каталог" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="inner-page pb-0">
+  <section class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <ul class="d-flex">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html" class="active">Каталог</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section catalog-wrapper">
+    <div class="container">
+      <div class="catalog-header d-flex a-i-center">
+        <h3 class="inner-page__title">Каталог продукции <span class="red-text">ERA</span> Group</h3>
+
+        <form action="" class="catalog-search">
+          <input type="text" placeholder="Поиск по каталогу" />
+          <button type="submit">
+            <img src="img/icons/search-ic.png" alt="" />
+          </button>
+        </form>
+      </div>
+      <div class="catalog-content d-flex a-i-start">
+        <aside class="catalog-content__sidebar">
+          <form action="" class="catalog-form">
+            <h6 class="catalog-form__title" id="show-catalog-filter">
+              <b>Фильтр по параметрам</b>
+              <img src="img/icons/accordion-arr.png" alt="" />
+            </h6>
+
+            <div class="catalog-form__filter">
+              <div class="catalog-form__item">
+                <div class="catalog-form__range">
+                  <h6 class="catalog-form__title"><b>Цена</b></h6>
+                  <input type="text" class="range-slider" />
+                  <div class="catalog-form__range-controls d-flex j-c-between">
+                    <input type="text" id="range-from" value="0" />
+                    <input type="text" id="range-to" value="0" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-form__item">
+                <h6 class="catalog-form__title"><b>Функции</b></h6>
+
+                <div class="checkbox">
+                  <input type="checkbox" checked id="check-1" />
+                  <label for="check-1">Поворот корпуса</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check-2" />
+                  <label for="check-2">Выбор скорости</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="check-3" />
+                  <label for="check-3">Реверс</label>
+                </div>
+              </div>
+
+              <div class="catalog-form__item">
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <a href="#" class="accordion__item-title">
+                      <b>Торговые марки</b>
+                      <img src="img/icons/accordion-arr.png" alt="" />
+                    </a>
+                    <div class="accordion__content">
+                      <div class="trade-mark">
+                        <a href="#" class="trade-mark__link trade-mark_toggler">
+                          ERA
+                          <img src="img/icons/accordion-arr.png" alt="" />
+                        </a>
+                        <div class="trade-mark__content">
+                          <a href="#">1</a>
+                          <a href="#">2</a>
+                        </div>
+                      </div>
+                      <div class="trade-mark">
+                        <a href="#" class="trade-mark__link"> ERA PRO </a>
+                      </div>
+                      <div class="trade-mark">
+                        <a href="#" class="trade-mark__link"> EVECS </a>
+                      </div>
+                      <div class="trade-mark">
+                        <a href="#" class="trade-mark__link"> DICITI </a>
+                      </div>
+                      <div class="trade-mark">
+                        <a href="#" class="trade-mark__link trade-mark_toggler">
+                          AURAMAX
+                          <img src="img/icons/accordion-arr.png" alt="" />
+                        </a>
+                        <div class="trade-mark__content pb-0">
+                          <a href="#">Бытовые вентиляторы</a>
+                          <a href="#">Ветиляционные решётки</a>
+                          <a href="#">Воздуховоды гибкие</a>
+                          <a href="#">Люк-дверцы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-form__item">
+                <h6 class="catalog-form__title"><b>Технические характеристики</b></h6>
+
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    <span>Макс. расход воздуха,м<sup>3</sup></span>
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="air-1" />
+                      <label for="air-1">2</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="air-2" />
+                      <label for="air-2">3</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Присоединительный диаметр, мм
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="diametr-1" />
+                      <label for="diametr-1">10</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="diametr-2" />
+                      <label for="diametr-2">20</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Уровень звукового давления, дБ(А)
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="volume-1" />
+                      <label for="volume-1">100</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="volume-2" />
+                      <label for="volume-2">120</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Обратный клапан
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Класс защиты
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="class-1" />
+                      <label for="class-1">A</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="class-2" />
+                      <label for="class-2">B</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Тип
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="type-1" />
+                      <label for="type-1">A</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="type-2" />
+                      <label for="type-2">B</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-form__item">
+                <h6 class="catalog-form__title"><b>Дизайн</b></h6>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Материал
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="material-1" />
+                      <label for="material-1">Материал 1</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="material-2" />
+                      <label for="material-2">Материал 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Цвет
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="color-1" />
+                      <label for="color-1">Цвет 1</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="color-2" />
+                      <label for="color-2">Цвет 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trade-mark">
+                  <a href="#" class="trade-mark__link trade-mark_toggler">
+                    Страна производитель
+                    <img src="img/icons/accordion-arr.png" alt="" />
+                  </a>
+                  <div class="trade-mark__content">
+                    <div class="checkbox">
+                      <input type="checkbox" id="country-1" />
+                      <label for="country-1">Россия</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="country-2" />
+                      <label for="country-2">Украина</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="catalog-form__btn btn btn-outline-dark" type="submit">Применить</button>
+            </div>
+          </form>
+        </aside>
+
+        <div class="catalog-content__main">
+          <div class="catalog-content__main-item">
+            <h6><b>Торговые марки</b></h6>
+
+            <div class="trade-marks d-flex flex-wrap">
+              <div class="trade-marks__item">
+                <input type="checkbox" checked id="trade-marks-1" />
+                <label for="trade-marks-1">
+                  <img src="img/catalog-page/trade-mark-1.png" alt="" />
+                </label>
+              </div>
+              <div class="trade-marks__item">
+                <input type="checkbox" id="trade-marks-2" />
+                <label for="trade-marks-2">
+                  <img src="img/catalog-page/trade-mark-2.png" alt="" />
+                </label>
+              </div>
+              <div class="trade-marks__item">
+                <input type="checkbox" id="trade-marks-3" />
+                <label for="trade-marks-3">
+                  <img src="img/catalog-page/trade-mark-3.png" alt="" />
+                </label>
+              </div>
+              <div class="trade-marks__item">
+                <input type="checkbox" id="trade-marks-4" />
+                <label for="trade-marks-4">
+                  <img src="img/catalog-page/trade-mark-4.png" alt="" />
+                </label>
+              </div>
+              <div class="trade-marks__item">
+                <input type="checkbox" id="trade-marks-5" />
+                <label for="trade-marks-5">
+                  <img src="img/catalog-page/trade-mark-5.png" alt="" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-content__main-item">
+            <h6><b>Тип продукции</b></h6>
+            <div class="catalog-slider">
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-1.png" alt="" />
+                  </div>
+                  Бытовые
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-2.png" alt="" />
+                  </div>
+                  Решётки
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-3.png" alt="" />
+                  </div>
+                  Коммерческие
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-4.png" alt="" />
+                  </div>
+                  Канальные
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-1.png" alt="" />
+                  </div>
+                  Lorem
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-content__main-item">
+            <h6><b>Специальные линейки</b></h6>
+            <div class="catalog-slider">
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-1.png" alt="" />
+                  </div>
+                  Бытовые
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-2.png" alt="" />
+                  </div>
+                  Решётки
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-3.png" alt="" />
+                  </div>
+                  Коммерческие
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-4.png" alt="" />
+                  </div>
+                  Канальные
+                </div>
+              </div>
+              <div>
+                <div class="catalog-slider__item">
+                  <div class="icon">
+                    <img src="img/catalog-page/product-type-1.png" alt="" />
+                  </div>
+                  Lorem
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-filter tags">
+            <div href="#" class="catalog-filter__item tags__item active">
+              AURAMAX <button class="catalog-filter__item_delete"></button>
+            </div>
+            <div href="#" class="catalog-filter__item tags__item active">
+              Бытовые вентиляторы <button class="catalog-filter__item_delete"></button>
+            </div>
+            <div href="#" class="catalog-filter__item tags__item active">
+              Steet Line <button class="catalog-filter__item_delete"></button>
+            </div>
+            <div href="#" class="catalog-filter__item tags__item">
+              Очистить все <button class="catalog-filter__item_delete"></button>
+            </div>
+          </div>
+
+          <div class="catalog-products d-flex flex-wrap">
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__item">
+              <div class="catalog-product">
+                <div class="catalog-product__sale">10%</div>
+                <div class="catalog-product__image">
+                  <img src="img/catalog-page/product-pic.png" alt="" />
+                </div>
+                <div class="catalog-product__body">
+                  <a href="#" class="catalog-product__title">
+                    <b>Накладные вентиляторы AURA</b>
+                  </a>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Конструктивные опции</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="catalog-product__options d-flex a-i-center flex-wrap">
+                    <div class="catalog-product__options-title">Дополнительно</div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                    <div class="catalog-product__options-item">
+                      <img src="img/catalog-page/icon-1.png" alt="" />
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-red">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination">
+              <a href="#" class="pagination__arr left">
+                <img src="img/icons/pag-arr-l.png" alt="" />
+              </a>
+              <a href="#" class="pagination__item">1</a>
+              <a href="#" class="pagination__item active">2</a>
+              <span class="pagination__dots">...</span>
+              <a href="#" class="pagination__item">20</a>
+              <a href="#" class="pagination__arr right">
+                <img src="img/icons/pag-arr-r.png" alt="" />
+              </a>
+              <a href="#" class="pagination__show-all">Показать все</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<%= _.template(require('./../includes/section-news.html').default)(data) %> <%=
+_.template(require('./../includes/footer.html').default)(data) %>

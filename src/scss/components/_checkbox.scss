@@ -1,0 +1,47 @@
+.checkbox {
+  input {
+    display: none;
+    & + label {
+      position: relative;
+      padding-left: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      &::after,
+      &::before {
+        position: absolute;
+        cursor: pointer;
+      }
+      &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid $checkbox-gray;
+        border-radius: 2px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+      &::before {
+        @include transition(200ms, opacity, transform);
+        opacity: 0;
+        transform: scale(0) rotate(45deg);
+        height: 10px;
+        width: 5px;
+        border-bottom: 2px solid $checkbox-gray;
+        border-right: 2px solid $checkbox-gray;
+        content: '';
+        z-index: 2;
+        top: 2px;
+        left: 6px;
+      }
+    }
+    &:checked {
+      & + label {
+        &::before {
+          transform: scale(1) rotate(45deg);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
