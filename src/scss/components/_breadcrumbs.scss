@@ -3,6 +3,7 @@
 }
 .breadcrumbs {
   ul {
+    flex-wrap: wrap;
     li {
       a {
         text-decoration: none;

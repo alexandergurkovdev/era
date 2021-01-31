@@ -8,6 +8,7 @@
 
 // libs
 @import './libs/slick';
+@import './libs/ligthbox2';
 
 // components
 @import './components/breadcrumbs';
@@ -21,6 +22,9 @@
 @import './components/select';
 @import './components/checkbox';
 @import './components/range-slider';
+
+// sprites
+@import './sprites/index';
 
 // blocks
 @import './blocks/dropdown';
@@ -40,3 +44,4 @@
 @import './pages/contact';
 @import './pages/where-buy';
 @import './pages/catalog';
+@import './pages/detailed-product';
