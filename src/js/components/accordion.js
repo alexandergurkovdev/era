@@ -1,7 +1,8 @@
 import $ from 'jquery';
 
 $(document).ready(function () {
-  $('.accordion__item > a').on('click', function () {
+  $('.accordion__item > a').on('click', function (e) {
+    e.preventDefault();
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $(this).siblings('.accordion__content').slideUp(200);

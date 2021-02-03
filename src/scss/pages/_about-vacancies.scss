@@ -1,4 +1,11 @@
 .vacancies-tabs {
+  .about-partners-wrapper {
+    padding-top: 0;
+    padding-bottom: 50px;
+    .container {
+      padding: 0 !important;
+    }
+  }
   &__nav {
     margin-bottom: 35px;
     li {

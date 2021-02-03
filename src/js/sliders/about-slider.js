@@ -14,3 +14,37 @@ function initAboutSlider(selector) {
 
 initAboutSlider('#about-slider-1');
 initAboutSlider('#about-slider-2');
+
+$('.about-partners').slick({
+  slidesToShow: 7,
+  dots: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 6,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
+});

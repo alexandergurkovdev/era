@@ -41,7 +41,7 @@
     display: none;
     top: 100%;
     left: 0;
-    box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 8px 0 rgba(0, 0, 0, 0.08);
     padding: 65px 0 100px;
     z-index: 100;
     background: $c-white;
@@ -51,7 +51,7 @@
     @media (max-width: $breakpoint-xs) {
       position: static;
       box-shadow: none;
-      padding: 10px 0 0;
+      padding: 10px 0 0 10px;
     }
 
     &__title {
@@ -72,12 +72,17 @@
     }
 
     &__row {
-      @media (max-width: $breakpoint-md) {
+      @media (max-width: $breakpoint-lg) {
         flex-wrap: wrap;
+        justify-content: flex-start;
       }
     }
 
     &__col {
+      @media (max-width: $breakpoint-lg) {
+        width: 33.333%;
+        margin-bottom: 30px;
+      }
       @media (max-width: $breakpoint-md) {
         width: 50%;
         margin-bottom: 30px;

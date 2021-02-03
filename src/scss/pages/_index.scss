@@ -30,7 +30,6 @@
         padding-top: 90px;
       }
       @media (max-width: $breakpoint-sm) {
-        height: auto;
         padding: 80px 0;
       }
       &::after,
@@ -65,6 +64,10 @@
       }
       .content {
         max-width: 500px;
+        @media (max-width: $breakpoint-sm) {
+          background: $c-main-text;
+          padding: 15px;
+        }
         span {
           display: block;
           margin-bottom: $gutter;
@@ -81,6 +84,9 @@
           @media (max-width: $breakpoint-md) {
             font-size: 35px;
           }
+          @media (max-width: $breakpoint-sm) {
+            font-size: 28px;
+          }
           span {
             display: inline;
             font-size: 48px;
@@ -89,6 +95,9 @@
             }
             @media (max-width: $breakpoint-md) {
               font-size: 35px;
+            }
+            @media (max-width: $breakpoint-sm) {
+              font-size: 28px;
             }
           }
         }
@@ -236,9 +245,11 @@
   @media (max-width: $breakpoint-md) {
     padding: 90px 0;
   }
+  .trade-marks {
+    margin: 90px 0 0;
+  }
 }
 .trade-marks {
-  margin-top: 90px;
   @media (max-width: $breakpoint-md) {
     flex-wrap: wrap;
     margin-top: 5px;

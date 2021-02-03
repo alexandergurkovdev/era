@@ -48,15 +48,6 @@
 
 .partners-tabs {
   margin-bottom: 40px;
-  .tabs-nav {
-    li {
-      a {
-        @media (max-width: $breakpoint-md) {
-          font-size: 14px;
-        }
-      }
-    }
-  }
 }
 
 .documentaion {

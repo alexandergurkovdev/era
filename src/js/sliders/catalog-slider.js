@@ -19,3 +19,28 @@ $('.catalog-slider').slick({
     },
   ],
 });
+
+$('.catalog-products-slider').slick({
+  slidesToShow: 4,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});

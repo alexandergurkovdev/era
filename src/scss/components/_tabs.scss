@@ -3,7 +3,7 @@
     display: flex;
     border-bottom: 2px solid $c-gray;
     @media (max-width: $breakpoint-sm) {
-      flex-wrap: wrap;
+      flex-direction: column;
       border: 0;
     }
     &__item {
@@ -12,10 +12,13 @@
         padding-right: 15px;
       }
       @media (max-width: $breakpoint-sm) {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
       &.active {
         .tabs-nav__link {
+          @media (max-width: $breakpoint-sm) {
+            font-weight: 700;
+          }
           &::after {
             opacity: 1;
           }
@@ -24,6 +27,10 @@
     }
     &__link {
       position: relative;
+      @media (max-width: $breakpoint-sm) {
+        display: block;
+        text-align: center;
+      }
       &::after {
         position: absolute;
         left: 0;

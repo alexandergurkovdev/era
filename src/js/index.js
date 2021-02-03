@@ -1,6 +1,7 @@
 // libs
 import 'slick-carousel';
 import 'lightbox2';
+import 'selectric';
 
 // components
 import './components/dropdown';
@@ -11,6 +12,7 @@ import './components/accordion';
 import './components/where-buy-more';
 import './components/range-slider';
 import './components/lightbox';
+import './components/custom-select';
 
 // sliders
 import './sliders/top-slider';

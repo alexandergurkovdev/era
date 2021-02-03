@@ -83,16 +83,25 @@
     }
   }
 
+  .selectric-header__language {
+    .selectric {
+      border: 0;
+      background: none;
+      font-weight: 700;
+      .label {
+        font-size: 16px;
+        margin: 0;
+        color: $c-main-text;
+      }
+    }
+    .selectric-items {
+      min-width: 45px;
+    }
+    .button {
+      display: none;
+    }
+  }
   &__language {
-    background: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    border: 0;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-    width: auto;
     @media (max-width: $breakpoint-xs) {
       font-size: 14px;
     }
